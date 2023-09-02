@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use App\Providers\OrderServiceProvider;
+use App\Providers\ProductServiceProvider;
+use App\Providers\CustomerServiceProvider;
 
 return [
 
@@ -194,6 +197,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /**
+         * List Service Provider Project
+         */
+        CustomerServiceProvider::class,
+        OrderServiceProvider::class,
+        ProductServiceProvider::class,
 
     ],
 
